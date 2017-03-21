@@ -1,0 +1,65 @@
+@import 'mixins';
+@import 'variables';
+footer {
+    border-top: 10px solid $yellow;
+    width: 100%;
+    background: #065147;
+    padding: 2rem 0;
+    @include os-r;
+    color: #fff;
+    h2 {
+        color: inherit;
+        font-size: 1.9rem;
+        @include os-m;
+    }
+    .inner {
+        padding: 15px 0;
+    }
+    .navigation {
+        @include reset-list; 
+        font-family: inherit;
+        font-weight: inherit;
+        li {
+            margin: 10px 0; 
+            a {
+                color: inherit;
+                font-size: 1.6rem;
+                display: inline-block;
+                @include os-r;
+                &:hover,
+                &.selected {
+                    border-bottom: 1px solid;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .searchbox-container {
+        input[type=text] {
+            background: #05423a;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 15px;
+            display: block;
+            width: 100%;
+            color: #fff;
+            &::-webkit-input-placeholder {
+                color: #fff;
+            }
+            &::-moz-placeholder {
+                color: #fff;
+            }
+            &:-ms-input-placeholder {
+                color: #fff;
+            }
+            &:-moz-placeholder {
+                color: #fff;
+            }
+        }
+    }
+    .copyright {
+        @include os-m;
+        padding-top: 25px;
+        text-align: center;
+    }
+}

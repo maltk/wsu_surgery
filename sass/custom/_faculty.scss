@@ -1,0 +1,41 @@
+.faculty {
+    color: #333;
+    .preamble {
+        padding-bottom: 30px;
+        .doc-name {
+            color: #f8c340;
+        }
+    }
+    .trailer {
+        .top {
+                border-bottom: solid 2px #898989;
+            ul {
+                @include reset-list;
+                li {
+                    display: inline-block;
+                    a {
+                        display: block;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .bottom {
+            padding: 20px 15px 30px;
+        }
+    }
+}
+
+@media (min-width: 62.5em) {
+    .faculty {
+        .trailer {
+            .top {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+
+                }
+            }
+        }
+    }
+}

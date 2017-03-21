@@ -1,0 +1,12 @@
+{
+    "name": "wsu_surgery",
+    "scripts": {
+        "build-css": "node-sass --output-style compressed sass/style.scss -o C:/wamp64/www/surgery1/wp-content/themes/wsu_surgery/",
+        "build-css2": "node-sass --output-style uncompressed sass/style.scss -o C:/wamp64/www/surgery1/wp-content/themes/wsu_surgery/",
+        "watch-css": "node-sass --output-style compressed -w sass/style.scss -o C:/wamp64/www/surgery1/wp-content/themes/wsu_surgery/"
+    }
+}
+
+
+
+

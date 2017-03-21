@@ -1,0 +1,36 @@
+/*
+** MIXINS
+*/
+@mixin os-b {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+@mixin os-r {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+@mixin os-m {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@mixin section-padding {
+    padding: 4rem 0;
+}
+@mixin btn-base {
+    /*padding: 25px 35px;*/
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 1.4rem;
+    /*letter-spacing: 1.5px;*/
+    @include os-m;
+    text-decoration: none !important;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 7px;
+}

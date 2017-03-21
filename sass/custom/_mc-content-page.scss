@@ -1,0 +1,115 @@
+.cp-hero {
+    background: image('green-bg.jpg') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    /*padding: 3.7% 0 3.7%;*/
+    padding: 50px 15px 40px;
+    text-align: center;
+    h1 {
+        font-family: 'alright-medium';
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+#main_content {
+    padding-top: 80px;
+}
+
+.surg-body {
+    padding-top: 35px;
+    /* Sidebar */
+    .sidebar-left {
+        .sb-menu,
+        .sb-info {
+            background: #dcdcdc;
+            padding: 20px 20px 30px;
+            /*text-align: center;*/
+            h2 {
+                border-bottom: 2px solid #fff;
+                padding-bottom: 20px;
+                margin-bottom: 30px;
+            }
+            ul {
+                @include reset-list;
+                li {
+                    a {
+                        width: 100%;
+                    }
+                }
+            }
+            p {
+                font-family: 'alright-ri';
+            }
+        }
+        .sb-info {
+            margin-top: 20px;
+        }
+    }
+    .surg-content {
+        img.fw-img-body {
+            width: 100%;
+            margin: 20px 0;
+        }
+        h1 {
+            font-family: 'alright-medium';
+            border-bottom: 2px solid #b7b7b7;
+            padding-bottom: 8px;
+            margin-top: 25px;
+            margin-bottom: 18px;
+        }
+        /* Not Sure - Check With Liz */
+        h3,
+        h2,
+        h4,
+        h5,
+        h6 {
+            color: #666;
+            font-family: 'alright-bold';
+        }
+        ul.remove-spacing {
+            @include reset-list;
+            li {
+                padding: 5px 0;
+                .plus {
+                    font-family: 'alright-bold';
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:48em) {
+    .cp-hero {
+        padding: 70px 25px 70px;
+        text-align: center;
+        h1 {
+            font-size: 3.8rem;
+        }
+    }
+    #main_content {
+        padding-top: 0;
+    }
+}
+
+@media (min-width:62.5em) {
+    .cp-hero {
+        h1 {
+            font-size: 4.4rem;
+        }
+    }
+}
+
+@media (min-width: 93.75em) {
+    .sidebar-left {
+        .sb-menu,
+        .sb-info {
+            margin-right: 40px;
+        }
+    }
+}
