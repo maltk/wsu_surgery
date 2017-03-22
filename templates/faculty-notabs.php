@@ -20,30 +20,14 @@ get_header();
         </div>
     </section>
     <!-- #banner ends -->
+
     <!-- Main Content -->
+    <div class="page-content">
     <div class="container surg-body">
         <div class="row">
-            <div class="col-sm-5 col-md-4 sidebar-left">
-                <div class="sb-menu">
-                    <h2>Faculty</h2>
-                    <ul>
-                        <li>
-                            <a class="btn btn-yellow" href="#">Full-Time</a></li>
-                        <li>
-                            <a class="btn btn-dark-white" href="#">Full Time Affiliates</a></li>
-                        <li><a class="btn btn-dark-white" href="#">Clinical Faculty</a></li>
-                        <li><a class="btn btn-dark-white" href="#">Emeritus</a></li>
-                        <li><a class="btn btn-dark-white" href="#">Adjunct</a></li>
-                        <li><a class="btn btn-dark-white" href="#">Staff</a></li>
-                    </ul>
-                </div>
-                <div class="sb-info">
-                    <h2>FLS Certified</h2>
-                    <p>The Detroit Medical Center, is an official test center for surgeons interested in becoming certified
-                        in the fundamentals of laparoscopic surgery.
-                    </p>
-                </div>
-            </div>
+            <!-- Sidebar -->
+            <?php get_sidebar( 'faculty' ); ?> 
+            <!-- End Sidebar -->
             <!-- Main Content Column -->
             <div class="col-sm-7 col-md-8 surg-content faculty">
                 <div id="main_content">
@@ -79,6 +63,7 @@ get_header();
         </div>
     </div>
     <!-- /.container -->
+ </div>
 
 
 
