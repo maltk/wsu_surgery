@@ -127,6 +127,15 @@ function wsu_surgery_widgets_init() {
 		'before_title'	=>	'<h2 class="widget-title">',
 		'after_title'	=>	'</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'			=>	__( 'Faculty', 'wsu_surgery' ),
+		'id'			=>	'faculty-sidebar',
+		'before_widget'	=>	'<div id="%1$s" class="widget text-left">',
+		'after_widget'	=>	'</div>',
+		'before_title'	=>	'<h2 class="widget-title">',
+		'after_title'	=>	'</h2>',
+	) );
 }
 add_action( 'widgets_init', 'wsu_surgery_widgets_init' );
 

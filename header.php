@@ -36,7 +36,11 @@
         </div>
         <div class="hdr-middle">
             <div class="container logo-title">
-                <div class="logox"><img src="<?php echo get_template_directory_uri(); ?>/img/wsu-logo.png" alt=""></div>
+                <div class="logox">
+                    <?php if(get_theme_mod('dept_logo') != '') { ?>
+                    <img src="<?php echo get_theme_mod('dept_logo'); ?>" alt="">
+                    <?php }  ?>
+                </div>
                 <span class="line"></span>
                 <div class="dept-title">
                     <!--<h3>Wayne State University School of Medicine</h3>
