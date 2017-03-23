@@ -15,9 +15,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
-						<div class="inner">
-							<h2>The Department of Surgery</h2>
-							<p>Has a long and proud history of service, education, and research. Our strengths and reputation rest on its tripartite base of clinical, education and research foci. Although outstanding clinical surgeons are its trademark, the research and education missions are equally outstanding.</p>
+						<div class="inner dept-title-desc">
+							<?php if(get_theme_mod('ft_dept_title') != '') { ?>
+							<h2><?php echo get_theme_mod('ft_dept_title'); ?></h2>
+							<?php }  ?>
+
+							<?php if(get_theme_mod('ft_dept_desc') != '') { ?>
+							<p><?php echo get_theme_mod('ft_dept_desc'); ?></p>
+							<?php }  ?>
 						</div>
 					</div>
 					<div class="col-sm-offset-1 col-sm-2">
@@ -42,7 +47,9 @@
 					</div>
 				</div>
 				<div class="copyright">
-					<p>&copy; 2017, WSU Department of Surgery</p>
+					<?php if(get_theme_mod('hd_t_dept_title') != '') { ?>
+                    <p>&copy; <?php echo date("Y"); ?>, <?php echo get_theme_mod('hd_t_dept_title'); ?></p>
+                    <?php }  ?>
 				</div>
 			</div>
 		</footer>

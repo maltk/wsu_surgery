@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Facutly - No Tabs
+ * Template Name: Facutly - Simple
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *

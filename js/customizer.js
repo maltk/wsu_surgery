@@ -24,6 +24,21 @@
 			$( '.dept-top-title span' ).text( to );
 		} );
 	} );
+	wp.customize( 'hd_t_dept_title', function( value ) {
+		value.bind( function( to ) {
+			$( 'footer .copyright' ).text( to );
+		} );
+	} );
+	wp.customize( 'ft_dept_title', function( value ) {
+		value.bind( function( to ) {
+			$( 'footer .dept-title-desc h2' ).text( to );
+		} );
+	} );
+	wp.customize( 'ft_dept_desc', function( value ) {
+		value.bind( function( to ) {
+			$( 'footer .dept-title-desc p' ).text( to );
+		} );
+	} );
 
 	// Header text color.
 	wp.customize( 'header_textcolor', function( value ) {

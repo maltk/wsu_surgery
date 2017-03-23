@@ -15,7 +15,7 @@ function wsu_surgery_customize_register( $wp_customize ) {
 	//Kevins Additions
 	//var_dump($wp_customize->settings());
 
-	$wp_customize->get_section( 'title_tagline' )->title = __('Site Identiy & Header', 'wsu_surgery');
+	$wp_customize->get_section( 'title_tagline' )->title = __('Site Identiy & Header/Footer', 'wsu_surgery');
 
 	// Underscore.me Default
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
@@ -29,28 +29,24 @@ function wsu_surgery_customize_register( $wp_customize ) {
 	//KEIVNS ADDITIONS
 
 	//Set header top title
-   $wp_customize->add_setting('hd_t_dept_title', array(
-	   'default' => get_bloginfo('name'),
-	   'transport' => 'postMessage'
-   ));
-   $wp_customize->add_control(
-	    new WP_Customize_Control(
-			$wp_customize,
-			'hd_t_dept_title',
-			array(
-				'label'          => __( 'Set Top Header Title', 'wsu_surgery' ),
-				'section'        => 'title_tagline',
-				'settings'       => 'hd_t_dept_title'
+	$wp_customize->add_setting('hd_t_dept_title', array(
+		'default' => get_bloginfo('name'),
+		'transport' => 'postMessage'
+	));
+	$wp_customize->add_control(
+			new WP_Customize_Control(
+				$wp_customize,
+				'hd_t_dept_title',
+				array(
+					'label'          => __( 'Set Department Name', 'wsu_surgery' ),
+					'section'        => 'title_tagline',
+					'settings'       => 'hd_t_dept_title',
+					'description' => 'This will be shown at the top of the page in the green bar on the left.'
+				)
 			)
-		)
-   );
+	);
 
 	//Upload Logo
-	$wp_customize->add_section('custom_logo', array(
-		'title' => __('Upload Logo', 'wsu_surgery'),
-		'description' => __('Add logo here'),
-		'priority' => 130
-	));
 	$wp_customize->add_setting('dept_logo', array(
 		'default' => get_template_directory_uri() . '/img/wsu-logo.png'
 	));
@@ -59,13 +55,47 @@ function wsu_surgery_customize_register( $wp_customize ) {
            $wp_customize,
            'custom_logo',
            array(
-               'label'      => __( 'Upload a logo', 'wsu_surgery' ),
+               'label'      => __( 'Header Logo', 'wsu_surgery' ),
                'section'    => 'title_tagline',
                'settings'   => 'dept_logo',
+			   'description' => 'Upload your department logo here.',
                'context'    => 'dept-custom-logo' 
            )
        )
    );
+
+   //Footer: Department Title
+   $wp_customize->add_setting('ft_dept_title', array(
+		'transport' => 'postMessage'
+	));
+	$wp_customize->add_control(
+			new WP_Customize_Control(
+				$wp_customize,
+				'ft_dept_title',
+				array(
+					'label'          => __( 'Footer Department Title', 'wsu_surgery' ),
+					'section'        => 'title_tagline',
+					'settings'       => 'ft_dept_title',
+					'description' => 'The department title and description will be shown at the bottom of the page on the left.'
+				)
+			)
+	);
+   //Footer: Description
+   $wp_customize->add_setting('ft_dept_desc', array(
+		'transport' => 'postMessage'
+	));
+	$wp_customize->add_control(
+			new WP_Customize_Control(
+				$wp_customize,
+				'ft_dept_desc',
+				array(
+					'label'          => __( 'Footer Department Description', 'wsu_surgery' ),
+					'section'        => 'title_tagline',
+					'settings'       => 'ft_dept_desc',
+					'type'           => 'textarea',
+				)
+			)
+	);
 
    
 
