@@ -198,8 +198,11 @@ header {
                     h1 {
                         padding-top: 0;
                         margin-top: 0;
-                        font-size: 3.2rem;
-                        color: #10463e;
+                        a {
+                            font-size: 3.2rem;
+                            color: #10463e;
+                            text-decoration: none;
+                        }
                     }
                     h3 {
                         font-size: 2rem;
@@ -272,6 +275,6 @@ header {
 
 @media only screen and (min-width: 1500px) {
     header .hdr-middle .logo-title .dept-title {
-        width: 40%;
+        width: 38%;
     }
 }

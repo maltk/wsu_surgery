@@ -19,6 +19,11 @@
 			$( '.site-description' ).text( to );
 		} );
 	} );
+	wp.customize( 'hd_t_dept_title', function( value ) {
+		value.bind( function( to ) {
+			$( '.dept-top-title span' ).text( to );
+		} );
+	} );
 
 	// Header text color.
 	wp.customize( 'header_textcolor', function( value ) {

@@ -27,7 +27,9 @@
         <div class="hdr-top">
             <div class="container">
                 <div class="dept-top-title pull-left">
-                    <span>Wayne State | Department of Surgery</span>
+                    <?php if(get_theme_mod('hd_t_dept_title') != '') { ?>
+                    <span><?php echo get_theme_mod('hd_t_dept_title'); ?></span>
+                    <?php }  ?>
                 </div>
                 <div class="search-form pull-right">
                     <input type="text" name="" id="mainSearchBox" class="form-control" placeholder="I'm Searching For...">
@@ -43,15 +45,15 @@
                 </div>
                 <span class="line"></span>
                 <div class="dept-title">
-                    <!--<h3>Wayne State University School of Medicine</h3>
-                    <h1>The Michael and Marian Ilitch<br>Department of Surgery</h1>-->
 					<?php
 					$description = get_bloginfo( 'description', 'display' );
 					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+						<span class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></span>
 					<?php
 					endif; ?>
-					<h1><?php bloginfo( 'name' ); ?></h1>
+					<h1 class="site-title">
+                        <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
+                    </h1>
                 </div>
             </div>
         </div>
@@ -75,19 +77,24 @@
                     </div>
 				</div>
                 <!-- /.container -->	
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="container">
 				<?php
 					wp_nav_menu( array(
 						'menu'              => 'primary',
 						'theme_location'    => 'primary',
 						'depth'             => 2,
-						'container'         => 'div',
-						'container_class'   => 'collapse navbar-collapse',
-						'container_id'      => 'bs-example-navbar-collapse-1',
+						//'container'         => 'div',
+                        'container'         => false,
+						//'container_class'   => 'collapse navbar-collapse',
+						//'container_id'      => 'bs-example-navbar-collapse-1',
 						'menu_class'        => 'nav navbar-nav',
 						'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 						'walker'            => new WP_Bootstrap_Navwalker())
 					);
 				?>
+                </div>
+                </div>
             </nav>
         </div>
     </header>

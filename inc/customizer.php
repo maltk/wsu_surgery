@@ -11,13 +11,39 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function wsu_surgery_customize_register( $wp_customize ) {
+
+	//Kevins Additions
 	//var_dump($wp_customize->settings());
 
+	$wp_customize->get_section( 'title_tagline' )->title = __('Site Identiy & Header', 'wsu_surgery');
+
+	// Underscore.me Default
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
-	//Kevins edit
+
+
+
+
+	//KEIVNS ADDITIONS
+
+	//Set header top title
+   $wp_customize->add_setting('hd_t_dept_title', array(
+	   'default' => get_bloginfo('name'),
+	   'transport' => 'postMessage'
+   ));
+   $wp_customize->add_control(
+	    new WP_Customize_Control(
+			$wp_customize,
+			'hd_t_dept_title',
+			array(
+				'label'          => __( 'Set Top Header Title', 'wsu_surgery' ),
+				'section'        => 'title_tagline',
+				'settings'       => 'hd_t_dept_title'
+			)
+		)
+   );
 
 	//Upload Logo
 	$wp_customize->add_section('custom_logo', array(
@@ -34,12 +60,14 @@ function wsu_surgery_customize_register( $wp_customize ) {
            'custom_logo',
            array(
                'label'      => __( 'Upload a logo', 'wsu_surgery' ),
-               'section'    => 'custom_logo',
+               'section'    => 'title_tagline',
                'settings'   => 'dept_logo',
                'context'    => 'dept-custom-logo' 
            )
        )
    );
+
+   
 
    
 
