@@ -31,8 +31,8 @@
                     <span><?php echo get_theme_mod('hd_t_dept_title'); ?></span>
                     <?php }  ?>
                 </div>
-                <div class="search-form pull-right">
-                    <input type="text" name="" id="mainSearchBox" class="form-control" placeholder="I'm Searching For...">
+                <div class="search-container pull-right">
+                    <?php get_search_form(); ?>
                 </div>
             </div>
         </div>
@@ -79,6 +79,9 @@
                 <!-- /.container -->	
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <div class="container">
+                        <div class="search-container-mobile">
+                            <?php get_search_form(); ?>
+                        </div>
 				<?php
 					wp_nav_menu( array(
 						'menu'              => 'primary',

@@ -1,0 +1,139 @@
+.search-title {
+    color: #065147;
+    font-family: 'alright-bold' !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    border: none !important;
+}
+
+@media (max-width: 1000px) {
+    header {
+        .search-container-mobile {
+            margin-top: 55px;
+            form.search-form {}
+            input[type="text"] {
+                background: #fff;
+                @include os-r;
+                border: none;
+                box-shadow: none;
+                color: #222;
+                width: 240px;
+            }
+            input[type="submit"] {
+                color: #065147;
+                border: none;
+                padding-top: 5px;
+                padding-bottom: 2px;
+            }
+        }
+    }
+}
+
+
+
+
+
+#main_content .search-form {
+        position: relative;
+        clear: both;
+        outline: 1px solid #ADADAD;
+        font-size: 20px;
+        color: #7A7A7A;
+    }
+    #main_content [type="text"] {
+        width: 100%;
+        padding: 14px 0 13px 25px;
+        border: none;
+        font-size: 16px;
+        font-weight: 400;
+        outline: 0;
+        background-color: #F5F5F5;
+        line-height: inherit;
+        height: auto;
+    }
+    #main_content #searchsubmit {
+        float: left;
+    display: block;
+    height: 54px;
+    width: 55px;
+    text-indent: -99999px;
+    outline: 1px solid #4b2e83;
+    overflow: hidden;
+    background: #4b2e83;
+    position: relative;
+    border: none;
+    -webkit-background-size: 22px;
+    -moz-background-size: 22px;
+    -o-background-size: 22px;
+    background-size: 22px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+
+
+.dept-search-result {
+    padding-left: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    .result-title h2 {
+        margin-top: 14px;
+        margin-bottom: 5px;
+    }
+    .result-title h2 a {
+        color: #065147;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .dept-search-result-url,
+    .dept-search-result-date,
+    .dept-search-result-snippit {
+        font-family: 'alright';
+    }
+    .dept-search-result-url {
+        margin: 10px 0;
+        color: #969696;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 62.5em) {
+    .search-container-mobile {
+        display: none;
+    }
+    header {
+        .search-container {
+            form.search-form {
+                position: relative;
+                overflow: hidden;
+            }
+            input[type="text"] {
+                background: #fff;
+                @include os-r;
+                border-radius: 25px;
+                border: none;
+                box-shadow: none;
+                color: #222;
+                width: 240px;
+            }
+            input[type="submit"] {
+                position: absolute;
+                top: 3px;
+                right: 5px;
+                background: transparent;
+                color: #065147;
+                border: none;
+                border-left: 1px solid #065147;
+            }
+        }
+    }
+    
+}

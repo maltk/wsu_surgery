@@ -215,3 +215,40 @@ require get_template_directory() . '/inc/jetpack.php';
 *  Register Custom Navigation Walker
 */
 require_once( get_template_directory() . '/inc/wp-bootstrap-navwalker.php' );
+
+
+/**
+ * Generate custom search form
+ *
+ * @param string $form Form HTML.
+ * @return string Modified form HTML. 
+ */
+function wpdocs_my_search_form( $form ) {
+    $form = '<form role="search" method="get" class="search-form" action="' . home_url( '/' ) . '" >
+    <div><label class="screen-reader-text" for="s">' . __( "I'm Looking for..." ) . '</label>
+    <input type="text" value="' . get_search_query() . '" name="s" id="s" class="form-control" placeholder="' . esc_attr__("I'm Looking for...") .'" autocomplete="' . esc_attr__("off") . '" />
+    <input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />
+    </div>
+    </form>';
+ 
+    return $form;
+}
+add_filter( 'get_search_form', 'wpdocs_my_search_form' );
+
+/* 
+*
+* Add redirect wp search to custom search page
+*/
+function nice_search_redirect() {
+	global $wp_rewrite;
+	if ( !isset( $wp_rewrite ) || !is_object( $wp_rewrite ) || !$wp_rewrite->using_permalinks() )
+		return;
+ 
+	$search_base = $wp_rewrite->search_base;
+	if ( is_search() && !is_admin() && strpos( $_SERVER['REQUEST_URI'], "/{$search_base}/" ) === false ) {
+		wp_redirect( home_url( "/{$search_base}/" . urlencode( get_query_var( 's' ) ) ) );
+		exit();
+	}
+}
+ 
+add_action( 'template_redirect', 'nice_search_redirect' );

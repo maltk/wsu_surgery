@@ -14,24 +14,54 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
+<!-- Banner -->
+    <section class="cp-hero">
+        <div class="container">
 			<?php
 			while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+			
+				the_title( '<h1 class="entry-title">', '</h1>' );
 
 			endwhile; // End of the loop.
 			?>
+        </div>
+    </section>
+    <!-- #banner ends -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<!-- Main Content -->
+    <div class="page-content">
+    <div class="container surg-body">
+        <div class="row">
+            <!-- Main Content Column -->
+            <div class="col-sm-12 col-md-8 surg-content">
+                <div id="main_content">
+					
+					<?php
+					while ( have_posts() ) : the_post();
+
+						get_template_part( 'template-parts/content', 'page' );
+
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
+
+					endwhile; // End of the loop.
+					?>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+	</div>
+
+
+
+
+
+
 
 <?php
 get_sidebar();

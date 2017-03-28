@@ -72,7 +72,7 @@
 
 .navbar {
     ul.nav {
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 50px;
         li {
             a {
@@ -148,6 +148,9 @@ header {
     #bs-example-navbar-collapse-1 {
         background: initial;
     }
+    .search-container-mobile {
+        display: none;
+    }
     header {
         .hdr-top {
             background-color: #065147;
@@ -161,8 +164,12 @@ header {
                 font-size: 1.4rem;
                 margin-top: 5px;
             }
-            .search-form {
-                input[type="text"] {
+            .search-container {
+                form.search-form {
+                    position: relative;
+                    overflow: hidden;
+                }
+                input[type="search"] {
                     background: #fff;
                     @include os-r;
                     border-radius: 25px;
@@ -170,6 +177,15 @@ header {
                     box-shadow: none;
                     color: #222;
                     width: 240px;
+                }
+                input[type="submit"] {
+                    position: absolute;
+                    top: 3px;
+                    right: 5px;
+                    background: transparent;
+                    color: #065147;
+                    border: none;
+                    border-left: 1px solid #065147;
                 }
             }
         }

@@ -9,22 +9,22 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
+<div class="dept-search-result">
+	<div class="row">
+		<div class="result-title">
+			<?php the_title( sprintf( '<h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		</div>
 		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
+		<div class="dept-search-result-date">
 			<?php wsu_surgery_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		</div>
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+		<div class="dept-search-result-url">
+			<?php echo get_permalink(); ?>
+		</div>
+		<div class="dept-search-result-snippit">
+			<?php the_excerpt(); ?>
+		</div>
+	</div>
+</div>
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php wsu_surgery_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->

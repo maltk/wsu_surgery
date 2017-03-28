@@ -22,27 +22,10 @@
     text-align: center;
 }
 
-.cp-hero {
-    background: image('green-bg.jpg') no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    /*padding: 3.7% 0 3.7%;*/
-    padding: 50px 15px 40px;
-    text-align: center;
-    h1 {
-        font-family: 'alright-medium';
-        font-size: 3.2rem;
-        text-transform: uppercase;
-        color: #fff;
-    }
-}
+
 
 #main_content {
-    padding-top: 80px;
+    /*padding-top: 80px;*/
 }
 
 .surg-body {
@@ -108,26 +91,7 @@
     }
 }
 
-@media (min-width:48em) {
-    .cp-hero {
-        padding: 70px 25px 70px;
-        text-align: center;
-        h1 {
-            font-size: 3.8rem;
-        }
-    }
-    #main_content {
-        padding-top: 0;
-    }
-}
 
-@media (min-width:62.5em) {
-    .cp-hero {
-        h1 {
-            font-size: 4.4rem;
-        }
-    }
-}
 
 @media (min-width: 93.75em) {
     .sidebar-left {
