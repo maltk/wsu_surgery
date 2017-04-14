@@ -12,8 +12,8 @@
 
     <!-- Banner -->
     <div class="banner">
-        <div id="home-hero">
-            <section class="s1">
+        <div id="home-hero" class="bxslider">
+            <section class="s1 home-hero-item">
                 <!--<div class="overlay"></div>-->
                 <div class="container">
                     <div class="col-lg-8 text-left col-md-12 col-sm-12 col-xs-12">
@@ -149,25 +149,35 @@
                     </div>
                 </div>
             </section>
-            <section class="s2">
+            <section class="s2 home-hero-item">
                 <div class="overlay"></div>
-                <div class="container">
-                    <div class="col-lg-8 text-left col-md-12 col-sm-12 col-xs-12">
+                <div class="hero-content">
+                    <div class="copy">
+                        <div class="copy-inner">
+                            <div class="copy-adjust">
                         <h3>Surgical residency at the Detroit Medical Center and <br> Wayne State University means access to...</h3>
                         <ul>
                             <li>Distinguished academic surgeons with international reputations</li>
                             <li>State-of-the-art surgical technologies, including robots, simulators and other technologies</li>
-                            <li>A large multi-hospital, multi-specialty environment</li>
+                            <!--<li>A large multi-hospital, multi-specialty environment</li>
                             <li>An organization whose mission is to&nbsp;surgery and not just teach and practice it</li>
-                            <li>A vibrant and cultured city with world-class art and music</li>
+                            <li>A vibrant and cultured city with world-class art and music</li>-->
                         </ul>
                         <br>
                         <a class="btn btn-yellow btn-xlg" href="#">Learn More</a>
                         <!--<a class="btn btn-dark-white btn-xlg" href="#">Learn More</a>-->
+                        </div>
+                        </div>
+                    </div>
+                    <div class="hero-wrapper">
+                        <figure class="hero-image hero-image-a">
+							<div class="hero-image-inner" style="background-image: url('http://localhost/surgery1/wp-content/themes/wsu_surgery/img/Residency-Hero.jpg');">
+							</div>
+						</figure>
                     </div>
                 </div>
             </section>
-            <section class="s3">
+            <section class="s3 home-hero-item">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="col-lg-8 text-left col-md-12 col-sm-12 col-xs-12">

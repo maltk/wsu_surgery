@@ -7,7 +7,9 @@
 
 get_header(); 
 
-get_template_part( 'template-parts/homepage-banner' );
+//get_template_part( 'template-parts/homepage-banner' );
+
+putRevSlider("news-gallery3");
 ?>
 
     <!-- Main Content -->

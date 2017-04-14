@@ -4,11 +4,13 @@
 /* Mobile Menu Dropdown Nav Styles */
 
 
-/* Display Bootstrap 3.3.x Mobile Menu until 1000px */
+/* *******************************
+**  Display Bootstrap 3.3.x Mobile Menu until 1000px 
+* **************************************************** */
 
-.navbar-header {
+/*.navbar-header {
     float: none;
-}
+}*/
 
 
 /*.navbar-left,
@@ -21,14 +23,16 @@
 }
 
 
-/*.navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }*/
+/*
+.navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+*/
 
 .navbar-collapse.collapse {
     display: none!important;
@@ -36,9 +40,9 @@
 
 
 /*.navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }*/
+    float: none!important;
+    margin-top: 7.5px;
+}*/
 
 .navbar-nav>li {
     float: none;
@@ -93,7 +97,12 @@
     }
 }
 
+/************************* 
+* Start header styles 
+************************** */
 header {
+    position: relative;
+    z-index: 9999;
     .hdr-top {
         display: none;
     }
@@ -104,15 +113,48 @@ header {
         .navbar {
             background: #065147;
             border: none;
-            border-bottom: 4px solid #ffc842;
+            /*border-bottom: 5px solid #ffc842;*/
             margin-bottom: 0;
             border-radius: 0;
+            .navbar-header {
+                padding: 0 0;
+                margin-right: initial;
+                margin-left: 16.66666667%;
+            }
+            .ill-outline {
+                display: inline-block;
+                width: 125px;
+                position: absolute;
+                top: 13px;
+                left: -15px;
+                z-index: 9999;
+                height: 77px;
+                path {
+                    stroke-width: 18px;
+                    fill: #FFC842;
+                    stroke: #FFC842;
+                }
+            }
+            .ill-outline-mask {
+                position: absolute;
+                top: 46px;
+                left: 0;
+                z-index: 9998;
+                height: 4px;
+                background: #ffc842;
+                width: 100%;
+                border-left: solid 93px #065147;
+            }
+            .navbar-toggle {
+                margin-right: 0;
+            }
             .navbar-brand {
                 padding: 0;
-                padding-left: 15px;
+                padding-left: 23px;
                 display: block;
-                width: 80%;
+                width: 81%;
                 text-decoration: none;
+                padding-top: 5px; 
                 .shield {
                     width: 10.5rem;
                     height: 9rem;
@@ -127,7 +169,7 @@ header {
                     font-size: 1.5rem;
                 }
                 h1 {
-                    font-size: 1.7rem;
+                    font-size: 1.3rem;
                     z-index: 2;
                     position: relative;
                     color: #fff;
@@ -144,7 +186,7 @@ header {
     }
 }
 
-@media all and (min-width: 62.5em) {
+@media only screen and (min-width: 62.5em) {
     #bs-example-navbar-collapse-1 {
         background: initial;
     }

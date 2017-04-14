@@ -61,8 +61,14 @@
             <!-- Navigation -->
             <nav class="navbar" role="navigation">
                 <div class="container">
+                    <div class="ill-outline">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1056.2 516.5">
+                        <path stroke-miterlimit="10" d="M901.9 305.8c-78.8 0-124-19.2-170.3-133.6l-44.1 58.2-42.6 50.3-40.1-84.5c-17.6-39.8-35.3-79.7-52.9-119.5-.1 2-.1 4-.2 6.1-.8 24.7-1.6 194.3.8 218.7l-13.9.4c-1-72.4-1.2-181.9-.8-219.5.1-12.3.8-25 .8-37.3V11.8L552 42.1c21.9 49.5 43.8 98.9 65.7 148.4l30.4 68.7 28.3-37.3 51.6-68.1 7.6-10 4.5 11.7c26.8 69.7 52.6 106.5 86.3 123 33 16.2 75.2 14.1 133.6 11.2 27.3-1.4 58.3-2.9 93.8-2.9v14c-35.1 0-65.9 1.5-93.1 2.9-21.6 1.1-41.1 2.1-58.8 2.1zM458.4 480.5l.1-32.6V48.8L315.2 292.5c-4.8-17.4-11.6-34.4-18.2-50.9-7.5-18.7-15.2-38-19.7-57.2l-4.6-19.9-8.6 18.5c-24 51.8-50.5 81-85.9 94.7-33.2 12.9-72.2 14.7-121.5 13.2-17.2-.5-35-.1-54.3-.1v13c19.1 0 36.8.5 53.9 1.1 94.9 2.9 159.1 1.8 212.3-99.4 4.4 14 10 27.8 15.4 41.3 8.6 21.4 17.5 43.5 21.4 65.7l3.3 18.7 135.8-230.9v336.9l-.3 43.5c0 20.9-3.7 27.8-23.5 30.4v3c10.8-.2 19.4-.4 30.4-.4s20.1.2 31.3.4v-3c-20.2-2.5-24-9.2-24-30.6z"/>
+                        </svg>
+                    </div>
+                    <div class="ill-outline-mask"></div>
                     <!-- Brand and toggle get grouped for better mobile display data-toggle='collapse'' -->
-                    <div class="navbar-header">
+                    <div class="navbar-header col-xs-offset-2 col-xs-10">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             
                     <span class="sr-only">Toggle navigation</span>
@@ -70,10 +76,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                        <a class="navbar-brand" href="#">
-                            <h1>The Michael and Marian Ilitch<br>Department of Surgery</h1>
-                            <div class="shield"></div>
-                        </a>
+                           <a class="navbar-brand" href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><h1 class="site-title"><?php bloginfo('name'); ?></h1><!--<div class="shield"></div>--></a>
+                            
                     </div>
 				</div>
                 <!-- /.container -->	
