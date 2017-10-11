@@ -145,20 +145,16 @@ add_action( 'widgets_init', 'wsu_surgery_widgets_init' );
 function wsu_surgery_scripts() {
 	
 	/* CSS */
-	wp_enqueue_style( 'bootstrap-styles', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.7', 'all' );
-
-	wp_enqueue_style('open-sans', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-
+	wp_enqueue_style( 'bootstrap-styles', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '4.0.0', 'all' );
+    wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css', false, '4.1.0' );
 	wp_enqueue_style( 'wsu_surgery-style', get_stylesheet_uri() );
 
 	/* Scripts */
-
-	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.7', true );
-
-	wp_enqueue_script( 'respond-js', get_template_directory_uri() . '/js/respond.min.js', array('jquery'), '1.4.2', true );
+	wp_enqueue_script( 'popper', get_template_directory_uri() . '/assets/js/popper.min.js', array('jquery'), '1.11.1', true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '4.0.0', true );
+	wp_enqueue_script( 'sbd_base-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'bxslider-js', get_template_directory_uri() . '/js/jquery.bxslider.min.js', array('jquery'), '4.1.2', true );
-
 	wp_enqueue_script( 'site-js', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0', true );
 
 
@@ -187,9 +183,12 @@ add_action( 'wp_head', 'wsu_surgery_print_ie_scripts');
 
 
 /**
- * Implement the Custom Header feature.
+ * Registers an editor stylesheet for the theme.
  */
-require get_template_directory() . '/inc/custom-header.php';
+function add_editor_styles() {
+    add_editor_style( get_template_directory_uri() . '/assets/css/editor-style.css' );
+}
+add_action( 'admin_init', 'add_editor_styles' );
 
 /**
  * Custom template tags for this theme.
@@ -216,6 +215,10 @@ require get_template_directory() . '/inc/jetpack.php';
 */
 require_once( get_template_directory() . '/inc/wp-bootstrap-navwalker.php' );
 
+/*
+ * Set specific page header page title image
+ */
+ require get_template_directory() . '/inc/acf-field-groups.php';
 
 /**
  * Generate custom search form

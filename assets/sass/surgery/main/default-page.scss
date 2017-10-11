@@ -1,0 +1,46 @@
+
+
+
+
+#main_content {
+    /*padding-top: 80px;*/
+}
+
+.surg-body {
+    padding-top: 35px;
+    
+    .surg-content {
+        img.fw-img-body {
+            width: 100%;
+            margin: 20px 0;
+        }
+        h1 {
+            font-family: 'alright-medium';
+            border-bottom: 2px solid #b7b7b7;
+            padding-bottom: 8px;
+            margin-top: 25px;
+            margin-bottom: 18px;
+        }
+        /* Not Sure - Check With Liz */
+        h3,
+        h2,
+        h4,
+        h5,
+        h6 {
+            color: #666;
+            font-family: 'alright-bold';
+        }
+        ul.remove-spacing {
+            @include reset-list;
+            li {
+                padding: 5px 0;
+                .plus {
+                    font-family: 'alright-bold';
+                }
+            }
+        }
+    }
+}
+
+
+

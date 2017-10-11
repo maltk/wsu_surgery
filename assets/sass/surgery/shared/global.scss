@@ -1,0 +1,68 @@
+
+/* Equal Height Rows */
+
+/*.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}*/
+
+
+body {
+    background: #fff;
+    font-family: 'alright-medium';
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+    letter-spacing: .08px
+}
+
+
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@media (min-width: 1500px) {
+    .container {
+        width: 1470px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a,
+a:link,
+a:visited {
+    color: #f5c245;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: darken(#f5c245, 20%);
+    text-decoration: none;
+}
+
+
+.surg-body.container {
+    margin-bottom: 80px;
+}
+
+.row-vs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

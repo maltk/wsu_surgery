@@ -1,0 +1,57 @@
+﻿.sidebar-home {
+    color: #fff;
+
+    h2,
+    h3 {
+        color: inherit;
+    }
+
+    ul {
+        list-style: none;
+        @include reset-list;
+    }
+
+    a[class~=btn] {
+        width: 100%;
+    }
+
+    .dept-info {
+        background: #777;
+        padding: 20px 15px 10px;
+        margin-bottom: 15px;
+
+        > [class~='widget']:first-of-type {
+            border-bottom: 1px solid #fff;
+            padding-bottom: 1.5em;
+        }
+
+        color: inherit;
+
+        h2 {
+            font-size: 32px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+        }
+
+        a[class~=btn] {
+            border-bottom-color: #595959 !important;
+        }
+
+        .contact {
+            border-bottom: 1px solid #fff;
+            padding-bottom: 15px;
+        }
+
+        .dept-ad-1 {
+            margin-bottom: 25px;
+        }
+    }
+
+    .dept-twitter {
+        background: #eee;
+        padding: 15px;
+        color: #333;
+    }
+}
