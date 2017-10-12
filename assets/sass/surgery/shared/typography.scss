@@ -1,32 +1,32 @@
 
 @font-face {
     font-family: 'alright-medium';
-    src: font('alrightsans-medium-v3.eot');
-    src: font('alrightsans-medium-v3.eot?#iefix') format('embedded-opentype'), font('alrightsans-medium-v3.woff2') format('woff2'), font('alrightsans-medium-v3.woff') format('woff'), font('alrightsans-medium-v3.ttf') format('truetype'), font('alrightsans-medium-v3.svg#alright_sansmedium') format('svg');
+    src: url('../fonts/alrightsans-medium-v3.eot');
+    src: url('../fonts/alrightsans-medium-v3.eot?#iefix') format('embedded-opentype'), url('../fonts/alrightsans-medium-v3.woff2') format('woff2'), url('../fonts/alrightsans-medium-v3.woff') format('woff'), url('../fonts/alrightsans-medium-v3.ttf') format('truetype'), url('../fonts/alrightsans-medium-v3.svg#alright_sansmedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'alright';
-    src: font('alrightsans-regular-v3.eot');
-    src: font('alrightsans-regular-v3.eot?#iefix') format('embedded-opentype'), font('alrightsans-regular-v3.woff2') format('woff2'), font('alrightsans-regular-v3.woff') format('woff'), font('alrightsans-regular-v3.ttf') format('truetype'), font('alrightsans-regular-v3.svg#alright_sansregular') format('svg');
+    src: url('../fonts/alrightsans-regular-v3.eot');
+    src: url('../fonts/alrightsans-regular-v3.eot?#iefix') format('embedded-opentype'), url('../fonts/alrightsans-regular-v3.woff2') format('woff2'), url('../fonts/alrightsans-regular-v3.woff') format('woff'), url('../fonts/alrightsans-regular-v3.ttf') format('truetype'), url('../fonts/alrightsans-regular-v3.svg#alright_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'alright-bold';
-    src: font('alrightsans-bold-v3.eot');
-    src: font('alrightsans-bold-v3.eot?#iefix') format('embedded-opentype'), font('alrightsans-bold-v3.woff2') format('woff2'), font('alrightsans-bold-v3.woff') format('woff'), font('alrightsans-bold-v3.ttf') format('truetype'), font('alrightsans-bold-v3.svg#alright_sansbold') format('svg');
+    src: url('../fonts/alrightsans-bold-v3.eot');
+    src: url('../fonts/alrightsans-bold-v3.eot?#iefix') format('embedded-opentype'), url('../fonts/alrightsans-bold-v3.woff2') format('woff2'), url('../fonts/alrightsans-bold-v3.woff') format('woff'), url('../fonts/alrightsans-bold-v3.ttf') format('truetype'), url('../fonts/alrightsans-bold-v3.svg#alright_sansbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'alright-ri';
-    src: font('alrightsans-regularitalic-v3.eot');
-    src: font('alrightsans-regularitalic-v3.eot?#iefix') format('embedded-opentype'), font('alrightsans-regularitalic-v3.woff2') format('woff2'), font('alrightsans-regularitalic-v3.woff') format('woff'), font('alrightsans-regularitalic-v3.ttf') format('truetype'), font('alrightsans-regularitalic-v3.svg#alright_regularitalic') format('svg');
+    src: url('../fonts/alrightsans-regularitalic-v3.eot');
+    src: url('../fonts/alrightsans-regularitalic-v3.eot?#iefix') format('embedded-opentype'), url('../fonts/alrightsans-regularitalic-v3.woff2') format('woff2'), url('../fonts/alrightsans-regularitalic-v3.woff') format('woff'), url('../fonts/alrightsans-regularitalic-v3.ttf') format('truetype'), url('../fonts/alrightsans-regularitalic-v3.svg#alright_regularitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
