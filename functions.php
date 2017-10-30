@@ -149,13 +149,18 @@ function wsu_surgery_scripts() {
     wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css', false, '4.1.0' );
 	wp_enqueue_style( 'wsu_surgery-style', get_stylesheet_uri() );
 
-	/* Scripts */
+    /* Scripts */
+    wp_deregister_script( 'jquery' );
+    wp_register_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery-3.2.1.min.js', false, NULL, true );
+    wp_enqueue_script( 'jquery' );
+
+    //bootstrap
 	wp_enqueue_script( 'popper', get_template_directory_uri() . '/assets/js/popper.min.js', array('jquery'), '1.11.1', true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '4.0.0', true );
-	wp_enqueue_script( 'sbd_base-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
-
+	
 	wp_enqueue_script( 'bxslider-js', get_template_directory_uri() . '/assets/js/jquery.bxslider.min.js', array('jquery'), '4.1.2', true );
 	wp_enqueue_script( 'site-js', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), '1.0', true );
+    wp_enqueue_script( 'sbd_base-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
