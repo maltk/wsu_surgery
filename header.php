@@ -29,7 +29,7 @@
                     <span><?php echo get_theme_mod('hd_t_dept_title'); ?></span>
                     <?php }  ?>
                 </div>
-                <div class="search-container pull-right">
+                <div class="search-container ml-auto">
                     <?php get_search_form(); ?>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                     <?php }  ?>
                 </div>
                 <span class="line"></span>
-                <div class="dept-title">
+                <div class="dept-title col-md-6">
 					<?php
 					$description = get_bloginfo( 'description', 'display' );
 					if ( $description || is_customize_preview() ) : ?>
@@ -58,11 +58,7 @@
         <div class="hdr-bottom">
             <!-- Navigation -->
             <div class="navbar navbar-expand-xl primaryNavigation">
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <div class="container">
-                        <div class="search-container-mobile">
-                            <?php get_search_form(); ?>
-                        </div>
+                    
 				        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                             <?php
 				            wp_nav_menu( array(
@@ -72,15 +68,12 @@
 					            'container'         => '',
 					            'container_class'   => '',
 					            'container_id'      => '',
-					            'menu_class'        => 'navbar-nav ml-auto',
+					            'menu_class'        => 'navbar-nav mr-auto',
 					            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 					            'walker'            => new wp_bootstrap_navwalker())
 				            );
                             ?>
                         </div>
-
-                </div>
-                </div>
             </nav>
 
 
