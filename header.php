@@ -24,13 +24,15 @@
 	<header class="siteHeader">
         <div class="hdr-top">
             <div class="container">
-                <div class="dept-top-title pull-left">
-                    <?php if(get_theme_mod('hd_t_dept_title') != '') { ?>
-                    <span><?php echo get_theme_mod('hd_t_dept_title'); ?></span>
-                    <?php }  ?>
-                </div>
-                <div class="search-container ml-auto">
-                    <?php get_search_form(); ?>
+                <div class="row">
+                    <div class="dept-top-title mr-auto">
+                        <?php if(get_theme_mod('hd_t_dept_title') != '') { ?>
+                        <span><?php echo get_theme_mod('hd_t_dept_title'); ?></span>
+                        <?php }  ?>
+                    </div>
+                    <div class="search-container">
+                        <?php get_search_form(); ?>
+                    </div>
                 </div>
             </div>
         </div>
