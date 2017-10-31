@@ -50,14 +50,14 @@
 					<?php
 					endif; ?>
 					<h1 class="site-title">
-                        <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
+                        <a href="<?php bloginfo('url'); ?>" class="navbar-brand" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
                     </h1>
                 </div>
             </div>
         </div>
         <div class="hdr-bottom">
             <!-- Navigation -->
-            <div class="navbar navbar-expand-xl navbar-sbd primaryNavigation">
+            <div class="navbar navbar-expand-xl primaryNavigation">
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <div class="container">
                         <div class="search-container-mobile">

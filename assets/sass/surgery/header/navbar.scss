@@ -67,11 +67,11 @@
 
 
 
-#bs-example-navbar-collapse-1 {
+/*#bs-example-navbar-collapse-1 {
     background: #013335;
-}
+}*/
 
-@media (max-width: 1000px) {
+/*@media (max-width: 1000px) {
     .navbar-nav .open .dropdown-menu {
         position: static;
         float: none;
@@ -82,15 +82,15 @@
         -webkit-box-shadow: none;
         box-shadow: none;
     }
-}
+}*/
 
-.navbar {
+/*.navbar {
     ul.nav {
         margin-top: 20px;
         margin-bottom: 50px;
         li {
             a {
-                /*padding: .4rem 1rem .4rem 0;*/
+                /*padding: .4rem 1rem .4rem 0;
                 font-size: 1.6rem;
                 text-decoration: none;
                 display: block;
@@ -105,7 +105,7 @@
             }
         }
     }
-}
+}*/
 
 /************************* 
 * Start header styles 
@@ -113,12 +113,12 @@
 header {
     position: relative;
     z-index: 9999;
-    .hdr-top {
+    /*.hdr-top {
         display: none;
     }
     .hdr-middle {
         display: none;
-    }
+    }*/
     .hdr-bottom {
         .navbar {
             background: #065147;
@@ -126,7 +126,7 @@ header {
             /*border-bottom: 5px solid #ffc842;*/
             margin-bottom: 0;
             border-radius: 0;
-            .navbar-header {
+            /*.navbar-header {
                 padding: 0 0;
                 margin-right: initial;
                 margin-left: 16.66666667%;
@@ -157,8 +157,8 @@ header {
             }
             .navbar-toggle {
                 margin-right: 0;
-            }
-            .navbar-brand {
+            }*/
+            /*.navbar-brand {
                 padding: 0;
                 padding-left: 23px;
                 display: block;
@@ -188,21 +188,21 @@ header {
                     margin: 0;
                     padding-top: 8px;
                 }
-            }
-            .navbar-toggle>span {
+            }*/
+            /*.navbar-toggle>span {
                 background: #fff;
-            }
+            }*/
         }
     }
 }
 
 @media only screen and (min-width: 62.5em) {
-    #bs-example-navbar-collapse-1 {
+    /*#bs-example-navbar-collapse-1 {
         background: initial;
-    }
-    .search-container-mobile {
+    }*/
+    /*.search-container-mobile {
         display: none;
-    }
+    }*/
     header {
         .hdr-top {
             background-color: #065147;
@@ -300,21 +300,21 @@ header {
                 background-color: #fff;
                 border: none;
                 /* Hide Menu Icon */
-                .navbar-toggle {
+                /*.navbar-toggle {
                     display: none;
-                }
+                }*/
                 /* Hide logo/title */
-                .navbar-brand {
+                /*.navbar-brand {
                     display: none;
-                }
+                }*/
 
-                .navbar-collapse.collapse {
+                /*.navbar-collapse.collapse {
                     display: block !important;
-                }
+                }*/
 
-                .navbar-nav > li {
+                /*.navbar-nav > li {
                     float: left;
-                }
+                }*/
 
                 .navbar-nav > .active > a,
                 .navbar-nav > .active > a:focus,
@@ -325,7 +325,7 @@ header {
                     color: #fff;
                 }
 
-                ul.nav {
+                /*ul.nav {
                     width: 100%;
                     margin-top: 0;
                     margin-bottom: 0;
@@ -342,9 +342,9 @@ header {
                             font-size: 1.4rem;
                         }
                     }
-                }
+                }*/
                 /* Sub Menu */
-                .navbar-nav > li > ul.dropdown-menu {
+                /*.navbar-nav > li > ul.dropdown-menu {
                     border-top: none;
                     border-bottom-left-radius: 0;
                     border-bottom-right-radius: 0;
@@ -356,14 +356,14 @@ header {
                             text-decoration: underline;
                         }
                     }
-                }
+                }*/
             }
         }
     }
 }
 
-@media only screen and (min-width: 1500px) {
+/*@media only screen and (min-width: 1500px) {
     header .hdr-middle .logo-title .dept-title {
         width: 38%;
     }
-}
+}*/
