@@ -416,6 +416,18 @@ header {
   z-index: 9999; }
   header .hdr-top {
     display: none; }
+  header .hdr-middle {
+    padding-top: 15px; }
+    header .hdr-middle .logox {
+      text-align: center; }
+    header .hdr-middle .logox img {
+      max-height: 75px; }
+    header .hdr-middle .dept-title .site-description {
+      display: none; }
+    header .hdr-middle .dept-title .navbar-brand {
+      white-space: normal; }
+  header .hdr-bottom navbar-surgery .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
 @media only screen and (min-width: 768px) {
   header .hdr-top {
@@ -467,8 +479,6 @@ header {
         background: #b7b7b7;
         height: 100px;
         margin: 0 30px; }
-      header .hdr-middle .logo-title .dept-title .navbar-brand {
-        white-space: normal; }
       header .hdr-middle .logo-title .dept-title h1 {
         padding-top: 0;
         margin-top: 0; }
