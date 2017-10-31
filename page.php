@@ -15,12 +15,12 @@
 get_header(); ?>
 
 <!-- Banner -->
-    <section class="cp-hero">
+    <section class="page-header">
         <div class="container">
 			<?php
 			while ( have_posts() ) : the_post();
 			
-				the_title( '<h1 class="entry-title">', '</h1>' );
+				the_title( '<h1 class="page-title">', '</h1>' );
 
 			endwhile; // End of the loop.
 			?>
