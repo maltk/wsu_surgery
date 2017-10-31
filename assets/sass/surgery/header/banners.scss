@@ -137,6 +137,7 @@
     width: 100%;
     padding: 75px 15px 65px;
     text-align: center;
+
     .page-title,
     h2 {
         font-family: 'alright-bold';
@@ -144,13 +145,16 @@
         text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
         letter-spacing: 1px;
     }
+
     .page-title {
-        font-size: 65px;
+        font-size: 46px;
         text-transform: uppercase;
+
         @media (min-width: 768px) {
-            font-size: 46px;
+            font-size: 65px;
         }
     }
+
     h2 {
         font-size: 2.5rem;
         text-transform: none;
