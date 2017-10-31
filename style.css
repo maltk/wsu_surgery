@@ -584,7 +584,7 @@ header {
     align-items: center;
     border-bottom: 10px solid #ffc842; }
     header .hdr-top .dept-top-title {
-      font-size: 0.875px;
+      font-size: 14px;
       margin-top: 5px; }
     header .hdr-top .search-container form.search-form {
       position: relative;
