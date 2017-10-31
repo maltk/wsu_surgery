@@ -24,7 +24,7 @@
 	<header class="siteHeader">
         <div class="hdr-top">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="dept-top-title mr-auto">
                         <?php if(get_theme_mod('hd_t_dept_title') != '') { ?>
                         <span><?php echo get_theme_mod('hd_t_dept_title'); ?></span>
@@ -59,7 +59,7 @@
         </div>
         <div class="hdr-bottom">
             <!-- Navigation -->
-            <div class="navbar navbar-expand-xl primaryNavigation">
+            <div class="navbar navbar-expand-xl navbar-surgery primaryNavigation">
                     
 				        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                             <?php

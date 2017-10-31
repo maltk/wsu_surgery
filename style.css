@@ -420,7 +420,7 @@ header {
     margin-bottom: 0;
     border-radius: 0; }
 
-@media only screen and (min-width: 62.5em) {
+@media only screen and (min-width: 768px) {
   header .hdr-top {
     background-color: #065147;
     color: #fff;
@@ -431,8 +431,7 @@ header {
     align-items: center;
     border-bottom: 10px solid #ffc842; }
     header .hdr-top .dept-top-title {
-      font-size: 14px;
-      margin-top: 5px; }
+      font-size: 14px; }
     header .hdr-top .search-container form.search-form {
       position: relative;
       overflow: hidden; }
@@ -471,6 +470,8 @@ header {
         background: #b7b7b7;
         height: 100px;
         margin: 0 30px; }
+      header .hdr-middle .logo-title .dept-title .navbar-brand {
+        white-space: normal; }
       header .hdr-middle .logo-title .dept-title h1 {
         padding-top: 0;
         margin-top: 0; }
@@ -484,16 +485,20 @@ header {
         margin-bottom: 10px;
         color: #7a7a7a;
         letter-spacing: -.15px; }
-  header .hdr-bottom .navbar {
-    background-color: #fff;
-    border: none; }
-    header .hdr-bottom .navbar .navbar-nav > .active > a,
-    header .hdr-bottom .navbar .navbar-nav > .active > a:focus,
-    header .hdr-bottom .navbar .navbar-nav > .active > a:hover,
-    header .hdr-bottom .navbar .navbar-nav > li > a:focus,
-    header .hdr-bottom .navbar .navbar-nav > li > a:hover {
-      background-color: #065147;
-      color: #fff; } }
+  header .hdr-bottom .navbar-surgery .navbar-nav .nav-link {
+    padding: 20px 15px 20px;
+    display: block;
+    text-decoration: none;
+    color: #222;
+    font-family: 'alright-medium';
+    font-size: 1.4rem; }
+  header .hdr-bottom .navbar-surgery .navbar-nav > .active > a,
+  header .hdr-bottom .navbar-surgery .navbar-nav > .active > a:focus,
+  header .hdr-bottom .navbar-surgery .navbar-nav > .active > a:hover,
+  header .hdr-bottom .navbar-surgery .navbar-nav > li > a:focus,
+  header .hdr-bottom .navbar-surgery .navbar-nav > li > a:hover {
+    background-color: #065147;
+    color: #fff; } }
 
 .search-title {
   color: #065147;

@@ -1,7 +1,7 @@
 header {
     position: relative;
     z-index: 9999;
-    
+
     .hdr-bottom {
         .navbar {
             background: #065147;
@@ -12,7 +12,7 @@ header {
     }
 }
 
-@media only screen and (min-width: 62.5em) {
+@media only screen and (min-width: 768px) {
     header {
         .hdr-top {
             background-color: #065147;
@@ -25,7 +25,6 @@ header {
 
             .dept-top-title {
                 font-size: 14px;
-                margin-top: 5px;
             }
 
             .search-container {
@@ -81,6 +80,9 @@ header {
                 }
 
                 .dept-title {
+                    .navbar-brand {
+                        white-space: normal;
+                    }
 
                     h1 {
                         padding-top: 0;
@@ -105,9 +107,15 @@ header {
         }
 
         .hdr-bottom {
-            .navbar {
-                background-color: #fff;
-                border: none;
+            .navbar-surgery {
+                .navbar-nav .nav-link {
+                    padding: 20px 15px 20px;
+                    display: block;
+                    text-decoration: none;
+                    color: #222;
+                    font-family: 'alright-medium';
+                    font-size: 1.4rem;
+                }
 
                 .navbar-nav > .active > a,
                 .navbar-nav > .active > a:focus,
