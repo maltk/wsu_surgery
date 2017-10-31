@@ -1,6 +1,9 @@
 header {
     position: relative;
     z-index: 9999;
+    .hdr-top {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -99,6 +102,8 @@ header {
 
         .hdr-bottom {
             .navbar-surgery {
+                padding: 0 1rem;
+
                 .navbar-nav .nav-link {
                     padding: 15px;
                     display: block;

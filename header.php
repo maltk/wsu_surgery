@@ -25,7 +25,7 @@
         <div class="hdr-top">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="dept-top-title mr-auto">
+                    <div class="dept-top-title mr-md-auto">
                         <?php if(get_theme_mod('hd_t_dept_title') != '') { ?>
                         <span><?php echo get_theme_mod('hd_t_dept_title'); ?></span>
                         <?php }  ?>
@@ -60,23 +60,26 @@
         <div class="hdr-bottom">
             <!-- Navigation -->
             <div class="navbar navbar-expand-xl navbar-surgery primaryNavigation">
-                    
-				        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                            <?php
-				            wp_nav_menu( array(
-					            //'menu'              => 'Testing Menu',
-					            'theme_location'    => 'primary',
-					            'depth'             => 2,
-					            'container'         => '',
-					            'container_class'   => '',
-					            'container_id'      => '',
-					            'menu_class'        => 'navbar-nav mr-auto',
-					            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-					            'walker'            => new wp_bootstrap_navwalker())
-				            );
-                            ?>
-                        </div>
-            </nav>
+                        
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+				<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <?php
+				    wp_nav_menu( array(
+					    //'menu'              => 'Testing Menu',
+					    'theme_location'    => 'primary',
+					    'depth'             => 2,
+					    'container'         => '',
+					    'container_class'   => '',
+					    'container_id'      => '',
+					    'menu_class'        => 'navbar-nav mr-auto',
+					    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+					    'walker'            => new wp_bootstrap_navwalker())
+				    );
+                    ?>
+                </div>
 
 
 
