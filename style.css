@@ -876,7 +876,7 @@ header {
 
 */
 .page-header {
-  background: url("../img/green-bg.jpg");
+  background: url("assets/img/green-bg.jpg");
   background-size: cover;
   position: relative;
   width: 100%;
