@@ -136,6 +136,16 @@ function wsu_surgery_widgets_init() {
 		'before_title'	=>	'<h2 class="widget-title">',
 		'after_title'	=>	'</h2>',
 	) );
+
+    register_sidebar( array(
+		'name'          => esc_html__( 'Education', 'wsu_surgery' ),
+		'id'            => 'education-sidebar',
+		'description'   => esc_html__( 'Add widgets here.', 'wsu_surgery' ),
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'wsu_surgery_widgets_init' );
 
@@ -223,7 +233,7 @@ require_once( get_template_directory() . '/inc/wp-bootstrap-navwalker.php' );
 /*
  * Set specific page header page title image
  */
- require get_template_directory() . '/inc/acf-field-groups.php';
+ //require get_template_directory() . '/inc/acf-field-groups.php';
 
 /**
  * Generate custom search form
@@ -260,3 +270,28 @@ function nice_search_redirect() {
 }
  
 add_action( 'template_redirect', 'nice_search_redirect' );
+
+
+
+
+
+ /*
+ * ACF Sidebar Loader
+ */
+
+function my_acf_load_sidebar( $field )
+{
+    //print_r( $field );
+    //die;
+
+    // reset choices
+    $field['choices'] = array();
+    $field['choices']['about-sidebar'] = 'About Sidebar';
+    $field['choices']['education-sidebar'] = 'Education';
+    $field['choices']['sidebar-1'] = 'Default Sidebar';
+    $field['choices']['none'] = 'No Sidebar';
+
+    return $field;
+}
+
+add_filter('acf/load_field/name=select_a_sidebar', 'my_acf_load_sidebar');

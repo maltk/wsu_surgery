@@ -299,7 +299,7 @@ body {
 
 @media (min-width: 1500px) {
   .container {
-    width: 1470px; } }
+    max-width: 1470px; } }
 
 h1,
 h2,
