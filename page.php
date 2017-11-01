@@ -32,8 +32,11 @@ get_header(); ?>
     <div class="page-content">
     <div class="container surg-body">
         <div class="row">
+            <?php
+                get_sidebar();
+            ?>
             <!-- Main Content Column -->
-            <div class="col-sm-12 col-md-8 surg-content">
+            <div class="col-md-8 surg-content">
                 <div id="main_content">
 					
 					<?php
@@ -64,5 +67,4 @@ get_header(); ?>
 
 
 <?php
-get_sidebar();
 get_footer();

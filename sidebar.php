@@ -12,6 +12,19 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<aside id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</aside><!-- #secondary -->
+<div class="col-md-4 sidebar">
+
+    <?php do_action( 'before_sidebar' ); ?>
+
+    <?php
+    $sidebar = get_field('select_a_sidebar');
+    if($sidebar != 'none'){
+        dynamic_sidebar($sidebar);
+    };
+    ?>
+
+    <?php do_action( 'after_sidebar' ); ?>
+
+
+    <?php //dynamic_sidebar( 'sidebar-1' ); ?>
+</div>
