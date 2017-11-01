@@ -101,8 +101,8 @@ add_action( 'after_setup_theme', 'wsu_surgery_content_width', 0 );
  */
 function wsu_surgery_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Main Sidebar', 'wsu_surgery' ),
-		'id'            => 'main',
+		'name'          => esc_html__( 'Sidebar', 'wsu_surgery' ),
+		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'wsu_surgery' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
