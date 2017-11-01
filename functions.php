@@ -233,7 +233,8 @@ require_once( get_template_directory() . '/inc/wp-bootstrap-navwalker.php' );
 /*
  * Set specific page header page title image
  */
- //require get_template_directory() . '/inc/acf-field-groups.php';
+require get_template_directory() . '/inc/acf-field-group-sidebar.php';
+//require get_template_directory() . '/inc/acf-field-groups.php';
 
 /**
  * Generate custom search form
